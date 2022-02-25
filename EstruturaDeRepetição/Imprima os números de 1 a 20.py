@@ -7,5 +7,5 @@ for numeros in range(1, 11):
 
 print('Lista de números abaixo: ')
 for numeros in range(1, 21):
-    print(numeros, end=' ')
+    print(numeros, end =' ')
 

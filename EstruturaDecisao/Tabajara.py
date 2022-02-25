@@ -48,17 +48,6 @@ soma = picanha_total + alcatra_total + fiLe_duplo_total
 
 print(f'O valor a ser pago será de: R$ {soma:.2f}')
 
-# compra otimizada
-file_duplo = alcatra = picanha = 0
-file_duplo_kg = alcatra_kg = picanha_kg = 0
-file_duplo_total = 0
-for file_duplo_kg in range(0, 5):
-    file_duplo_kg = float(input('Quantos quilos você quer de Filé Duplo: '))
-    file_duplo = 4.9
-    fiLe_duplo_total = file_duplo * file_duplo_kg
-    for file_duplo_kg in range(5, ):
-        file_duplo = 5.8
-        fiLe_duplo_total = file_duplo * file_duplo_kg
-print(f'O valor a ser pago será de: R$ {file_duplo_total:.2f}')
+
 
 

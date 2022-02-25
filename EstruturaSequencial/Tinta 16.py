@@ -11,7 +11,7 @@ litros_por_metro = 3
 latas_de_18 = 80
 
 cobertura_da_tinta = area_a_ser_pintada / litros_por_metro
-print(f'quantidade de litros a serem usados {cobertura_da_tinta:.2f} metros')
+print(f'quantidade de litros a serem usados {cobertura_da_tinta:.2f} litros')
 quantidade_de_latas_de_18 = cobertura_da_tinta / 18
    # if quantidade_de_latas_de_18 == float:
   #     quantidade_de_latas_de_18 = int

@@ -1,8 +1,4 @@
 """Programa para pôr valores em uma lista(vetor)"""
-lista = []
+lista = list(range(1, 11))
 
-for _ in range(5):
-    numero = int(input('Digite um número inteiro: '))
-    lista.append(numero)
-
-print(lista)
+print(sorted(lista, reverse=True))

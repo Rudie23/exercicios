@@ -13,10 +13,8 @@ Vou montar a tabuada de 5 começando em 4 e terminando em 7:
 Obs: Você deve verificar se o usuário não digitou o final menor que o inicial."""
 
 tabuada = int(input('Tabuada de '))
-i = 0
-comecar = int(input('começar por: '))
+comecar = int(input('começar por: ')) - 1
 terminar = int(input('terminar por: '))
-while i < 10:
-    i = i + 1
-    comecar =
-    print(tabuada*i)
+while comecar < terminar:
+    comecar = comecar + 1
+    print(tabuada, 'x', comecar, '=', tabuada*comecar)
