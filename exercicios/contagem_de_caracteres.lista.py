@@ -1,4 +1,4 @@
-def contar_caracteres(s, caracter_anterior=None):
+def contar_caracteres(s):
     """ Função que conta os caracteres
 
     >>> contar_caracteres('Diego')
@@ -27,13 +27,13 @@ def contar_caracteres(s, caracter_anterior=None):
             contagem += 1
         else:
             print(f"{caracter_anterior}: {contagem}")
-            caracter_anterior=caracter
+            caracter_anterior = caracter
             contagem = 1
     print(f'{caracter_anterior}: {contagem}')
 
 
 if __name__ == '__main__':
-    contar_caracteres('Diego')
+    contar_caracteres('Diego'.lower())
     print()
-    contar_caracteres('Andrade')
+    contar_caracteres('Andrade'.lower())
     print()
