@@ -1,4 +1,5 @@
 def soma(*args):
+    print(type(args))
     aux = 0
     for valor in args:
         aux = aux + valor  # aux += valor
@@ -14,15 +15,3 @@ def f(**kwargs):
 
 
 print(f(nome='Diego'))
-
-nome = ''
-sobrenome = ''
-def f(*args, **kwargs):
-    kwargs = {'nome':'', 'sobrenome': ''}
-    print(**kwargs)
-
-
-
-print(f(1, 2, 'nome' == 'Diego', 'sobrenome' == 'Andrade'))
-
-
