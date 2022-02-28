@@ -19,6 +19,6 @@ def contar_caracteres(s):
 
 
 if __name__ == '__main__':
-    print(contar_caracteres('Diego'))
+    print(contar_caracteres('Diego'.lower()))
     print()
-    print(contar_caracteres('Andrade'))
+    print(contar_caracteres('Andrade'.lower()))
