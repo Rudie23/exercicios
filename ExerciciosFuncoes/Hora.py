@@ -11,4 +11,5 @@ def converter(horas:float):
     elif horas < 13:
         return f'{horas:.2f} A.M'
 
-print(converter(5))
+horas = float(input('Informe as horas: '))
+print(converter(horas))
