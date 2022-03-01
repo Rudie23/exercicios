@@ -1,5 +1,6 @@
-letras = {'vogal': 'a', 'e', 'i', 'o', 'u'}
+letras = ['a', 'e', 'i', 'o', 'u']
 letra = input('Digite uma letra: ')
 
-if letra == letras:
-    print(f'É vogal')
+for letra in letras:
+    if letra in letras:
+        print(f'É vogal')
