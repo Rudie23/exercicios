@@ -19,7 +19,7 @@ class Calculadora:
 if __name__ == '__main__':
     c = Calculadora(1,2)
     c.a = 10
-    c.b = 20
+    c.b = 5
     print(c.soma())
     print(c.subtracao())
     print(c.multiplicacao())

@@ -8,7 +8,7 @@ for _ in range(5):
     numero = float(input('Digite um número: '))
     lista.append(int(numero))
 
-lista.reverse()
+lista.sort()
 
 print('Lista com números inteiros abaixo:')
 print(lista)
