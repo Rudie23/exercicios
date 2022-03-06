@@ -10,10 +10,12 @@ FULANO
 """
 
 s = 'FULANO'
-new = ""
-for v in s:
+lenght = len(s)
 
-    print(v)
+for row in range(lenght):
+    for col in range(row +1):
+        print(s[col], end='')
+    print('')
 
 
 
