@@ -9,11 +9,12 @@ FULAN
 FULANO
 """
 
-s = 'FULANO'
-new = ""
-for v in s:
+string = 'FULANO'
+lenght = len(string)
 
-    print(v)
-
+for row in range(lenght):
+    for col in range(row + 1):
+        print(string[col], end='')
+    print()
 
 
