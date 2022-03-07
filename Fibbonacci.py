@@ -11,7 +11,7 @@ def fib(n):
     while a < n:
         result.append(a)
         a, b = b, a + b
-        print(a, end=' ')
+        print(result, end=' ')
     return result
 
-fib(100)
+fib(10)
