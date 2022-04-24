@@ -13,4 +13,6 @@ while True:
         if nome != senha:
             break
 
-print('Usuário e senha criados com sucesso')
+print('Usuário e senha criados com sucesso.')
+print(f'Usuário é {nome}!')
+print(f'A senha é {senha}!')

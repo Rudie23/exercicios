@@ -15,6 +15,7 @@ Obs: Você deve verificar se o usuário não digitou o final menor que o inicial
 tabuada = int(input('Tabuada de '))
 comecar = int(input('começar por: ')) - 1
 terminar = int(input('terminar por: '))
+
 while comecar < terminar:
     comecar = comecar + 1
     print(tabuada, 'x', comecar, '=', tabuada*comecar)
