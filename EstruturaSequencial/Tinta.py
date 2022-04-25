@@ -68,4 +68,4 @@ print(f'O número de galões otimizado é de: {numero_de_galoes_otimizado}.')
 valor_otimizado_galoes = numero_de_galoes_otimizado * valor_galao
 print('')
 
-print(f'O valor otimizado para a compra de tintas é de R$ {valor_otimizado_latas + valor_otimizado_galoes}.')
+print(f'O valor otimizado para a compra de tintas é de R$ {(valor_otimizado_latas + valor_otimizado_galoes):.2f}.')
