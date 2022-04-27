@@ -23,7 +23,7 @@ valor_galao = 25
 
 area_pintar = int(input('Informe a área que será pintada: '))
 area_total_pintar = area_pintar * 1.1
-print(f'A área com folga a ser pintada será de: {area_total_pintar:.2f}.')
+print(f'A área com folga a ser pintada será de: {area_total_pintar:.2f} m².')
 
 cobertura_por_litro = 6
 cobertura_total = area_total_pintar / cobertura_por_litro
