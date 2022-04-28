@@ -2,6 +2,6 @@ letras = ['a', 'e', 'i', 'o', 'u']
 letra = input('Digite uma letra: ')
 
 if letra in letras:
-    print(f'É vogal a letra "{letra}"')
+    print(f'A letra "{letra}" é vogal')
 else:
-    print(f'É consoante a letra "{letra}"')
+    print(f'A letra "{letra}" é consoante')
