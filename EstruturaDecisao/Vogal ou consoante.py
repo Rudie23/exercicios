@@ -1,4 +1,5 @@
-letras = ['a', 'e', 'i', 'o', 'u']
+letras = ['a', 'e', 'i', 'o', 'u',
+          'A', 'E', 'I', 'O', 'U']
 letra = input('Digite uma letra: ')
 
 if letra in letras:
