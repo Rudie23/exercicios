@@ -14,8 +14,8 @@ calcule os descontos e o salário líquido, conforme a tabela abaixo:
 Obs.: Salário Bruto - Descontos = Salário Líquido.
 """
 
-salario_por_hora = float(input(f'Quanto você ganha por hora? '))
-horas_trabalhadas_no_mes = float(input(f'Quantas horas por mês você trabalha? '))
+salario_por_hora = float(input('Quanto você ganha por hora? '))
+horas_trabalhadas_no_mes = float(input('Quantas horas por mês você trabalha? '))
 
 salario_bruto = salario_por_hora * horas_trabalhadas_no_mes
 print(f'a) Salário bruto: R$ {salario_bruto}')

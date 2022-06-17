@@ -5,7 +5,7 @@ print('Descubra a palavra')
 
 print('A palavra é: ', end='')
 for letra in palavra:
-    print(f'_ ', end='')
+    print('_ ', end='')
 
 conjunto_letras_palavras = set(palavra)
 conjunto_letras_digitadas = set()
@@ -26,7 +26,7 @@ while not conjunto_letras_palavras.issubset(conjunto_letras_digitadas) and erros
             if letra in conjunto_letras_digitadas:
                 print(f'{letra} ', end='')
             else:
-                print('_ ', end = '')
+                print('_ ', end='')
     else:
         erros += 1
         print(f' -> Erro {erros} de 6. Tente de novo!')

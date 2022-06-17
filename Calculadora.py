@@ -16,8 +16,9 @@ class Calculadora:
     def divisao(self):
         return self.a / self.b
 
+
 if __name__ == '__main__':
-    c = Calculadora(1,2)
+    c = Calculadora(1, 2)
     c.a = 10
     c.b = 5
     print(c.soma())

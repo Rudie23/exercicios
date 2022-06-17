@@ -4,12 +4,14 @@ conversão e uma para a saída. Registre a informação A.M./P.M. como um valor 
 a função para efetuar as conversões terá um parâmetro formal para registrar se é A.M. ou P.M. Inclua um loop que
 permita que o usuário repita esse cálculo para novos valores de entrada todas as vezes que desejar. """
 
-def converter(horas:float):
+
+def converter(horas: float):
     if horas >= 13:
         horas = horas - 12
         return f'{horas:.2f} P.M'
     elif horas < 13:
         return f'{horas:.2f} A.M'
+
 
 horas = float(input('Informe as horas: '))
 print(converter(horas))

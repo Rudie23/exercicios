@@ -7,7 +7,7 @@
 5 X 10 = 50
 """
 tabuada = int(input('Digite entre 1 e 10 para saber sua tabuada. '))
-i=0
+i = 0
 while i < 10:
     i = i + 1
-    print(tabuada, 'x', i, '=', tabuada*i)
+    print(tabuada, 'x', i, '=', tabuada * i)

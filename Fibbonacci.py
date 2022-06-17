@@ -1,11 +1,12 @@
-
 a, b = 0, 1
 while a < 10000000:
     print(a, end=' ')
-    a, b = b, a+b
+    a, b = b, a + b
 print('\n')
+
+
 def fib(n):
-    '''Return a list containing the Fibonacci series up to on'''
+    """Return a list containing the Fibonacci series up to on"""
     result = []
     a, b = 0, 1
     while a < n:
@@ -13,5 +14,6 @@ def fib(n):
         a, b = b, a + b
         print(result, end=' ')
     return result
+
 
 fib(10)

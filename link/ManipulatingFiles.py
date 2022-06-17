@@ -3,21 +3,20 @@ from os import path
 import shutil
 
 
-def CopyFile():
+def copyfile():
     if path.exists("New.txt"):
-        pathCurrent = path.realpath("New.txt")
-        newPath = pathCurrent + ".bkp"
-        shutil.copy(pathCurrent, newPath)
-
-        shutil.copystat(pathCurrent, newPath)
-
-
-CopyFile()
+        path_current = path.realpath("New.txt")
+        new_path = path_current + ".bkp"
+        shutil.copy(path_current, new_path)
+        shutil.copystat(path_current, new_path)
 
 
-def renameFile():
+copyfile()
+
+
+def renamefile():
     if path.exists("New.txt.bkp"):
         os.rename("New.txt.bkp", "ChangedFile.txt")
-        
 
-renameFile()
+
+renamefile()

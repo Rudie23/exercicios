@@ -1,9 +1,10 @@
 
-def imprimir_triangulo_de_numeros(n: int): #parametro: o que vc espera para
+def imprimir_triangulo_de_numeros(n: int):  # parametro: o que vc espera para
     for i in range(1, n + 1):
         for _ in range(i):
-            print(i, end = '  ')
+            print(i, end='  ')
         print('')
+
 
 print('Triangulo com 1')
 imprimir_triangulo_de_numeros(1)
