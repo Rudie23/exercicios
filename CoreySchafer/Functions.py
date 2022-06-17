@@ -1,5 +1,3 @@
-
-
 month_days = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 
@@ -16,8 +14,9 @@ def days_in_month(year, month):
         return 'Invalid month!'
     if month == 2 and is_leap(year):
         return 29
-    
+
     return month_days[month]
+
 
 print(is_leap(2018))
 
