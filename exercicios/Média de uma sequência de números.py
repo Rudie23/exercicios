@@ -1,6 +1,5 @@
-'''vamos corrigir a lição de casa de criação de um programa para calcular a média de uma
-sequência de números arbitrários fornecida pelo usuário do sistema.'''
-import soma as soma
+"""Vamos corrigir a lição de casa de criação de um programa para calcular a média de uma
+sequência de números arbitrários fornecida pelo usuário do sistema."""
 
 print("Para saber a soma e a média dos números")
 soma = float(input('Digite um número: '))

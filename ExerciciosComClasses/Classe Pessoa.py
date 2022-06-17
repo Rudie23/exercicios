@@ -1,8 +1,10 @@
 """Classe Pessoa: Crie uma classe que modele uma pessoa:
 
     a) Atributos: nome, idade, peso e altura
-    b) Métodos: Envelhecer, engordar, emagrecer, crescer. Obs: Por padrão, a cada ano que nossa pessoa envelhece, sendo a idade dela menor que 21 anos, ela deve crescer 0,5 cm.
+    b) Métodos: Envelhecer, engordar, emagrecer, crescer. Obs: Por padrão, a cada ano que nossa pessoa envelhece, sendo
+    a idade dela menor que 21 anos, ela deve crescer 0,5 cm.
 """
+
 
 class Pessoa:
     def __init__(self, nome, idade, peso, altura):
@@ -16,7 +18,8 @@ class Pessoa:
             self.altura += 0.5
         self.idade += 1
 
-otavio = Pessoa ('Otavio', 2, 12, 80)
+
+otavio = Pessoa('Otavio', 2, 12, 80)
 
 for _ in range(20):
     otavio.envelhecer()

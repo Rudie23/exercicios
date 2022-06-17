@@ -14,17 +14,18 @@ OBS: Sempre que acontecer um abastecimento é necessário atualizar a quantidade
 
 """
 
+
 class BombaCombustivel:
-    def __init__(self, tipo_combustivel:str, valor_litro: float, quantidade_combustivel: float):
+    def __init__(self, tipo_combustivel: str, valor_litro: float, quantidade_combustivel: float):
         self.quantidade_combustivel = quantidade_combustivel
         self.valor_litro = valor_litro
         self.tipo_combustivel = tipo_combustivel
 
-    def abastecer_por_valor(self, valor:float):
+    def abastecer_por_valor(self, valor: float):
         litros_abastecidos = valor / self.valor_litro
         self._apresentar_abastecimento_se_possivel(litros_abastecidos, valor)
 
-    def _apresentar_abastecimento_se_possivel(self, litros_abastecidos:float, valor:float):
+    def _apresentar_abastecimento_se_possivel(self, litros_abastecidos: float, valor: float):
         if litros_abastecidos > self.quantidade_combustivel:
             print(f'Não é possível abastecer, faltam  {litros_abastecidos - self.quantidade_combustivel} litros')
             print(f'Sobraram na bomba {self.quantidade_combustivel:.2f} litros de {self.tipo_combustivel}.')
@@ -33,15 +34,16 @@ class BombaCombustivel:
             print(f'Foram abastecidos {litros_abastecidos:.2f} litros a valor de R$ {valor:.2f}')
             print(f'Sobraram na bomba {self.quantidade_combustivel:.2f} litros de {self.tipo_combustivel}.')
 
-    def abastecer_por_litros(self, litros_abastecidos:float):
+    def abastecer_por_litros(self, litros_abastecidos: float):
         valor = litros_abastecidos * self.valor_litro
         self._apresentar_abastecimento_se_possivel(litros_abastecidos, valor)
 
-    def adicionar_mais_combustivel(self, quantidade:float):
-        if quantidade >= 0 :
+    def adicionar_mais_combustivel(self, quantidade: float):
+        if quantidade >= 0:
             self.quantidade_combustivel += quantidade
         else:
             print('Malandro, você não vai roubar combustível dessa bomba.')
+
 
 bomba = BombaCombustivel('Gasolina', 7.0, 55.0)
 

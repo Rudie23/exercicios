@@ -8,11 +8,12 @@ Classe Retangulo: Crie uma classe que modele um retangulo:
 
 """
 
+
 class Retangulo:
 
     def __init__(self, largura, comprimento):
         self.largura = largura
-        self.comprimento  = comprimento
+        self.comprimento = comprimento
 
     def area(self):
         return f'A área é de {self.largura * self.comprimento} metros'
@@ -23,4 +24,3 @@ comprimento = float(input('Qual o comprimento? '))
 
 retangulo = Retangulo(largura, comprimento)
 print(retangulo.area())
-

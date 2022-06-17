@@ -1,8 +1,8 @@
 number = 55
 centenas_str = dezenas_str = unidades_str = ''
 centenas_int, number = divmod(number, 100)  # resultado da divisão inteira divmod(numerador, divisor). na parte esquerda
-                                            # centenas_int é o parametro que tem o resultado da divisao inteira
-                                            # number é o segundo parametro/variavel que irá recebr o resto
+# centenas_int é o parametro que tem o resultado da divisao inteira
+# number é o segundo parametro/variavel que irá recebr o resto
 
 partes_numericas = 0
 
@@ -45,5 +45,3 @@ elif partes_numericas == 2:
         print(f'{centenas_str} e {segunda_parte}')
     else:
         print(f'{dezenas_str} e {unidades_str}')
-
-
