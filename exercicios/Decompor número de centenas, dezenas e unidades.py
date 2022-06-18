@@ -1,4 +1,4 @@
-number = 55
+number = 505
 centenas_str = dezenas_str = unidades_str = ''
 centenas_int, number = divmod(number, 100)  # resultado da divisão inteira divmod(numerador, divisor). na parte esquerda
 # centenas_int é o parametro que tem o resultado da divisao inteira

@@ -6,7 +6,7 @@ f2 = 1
 f = 1
 
 
-for n in range(10):
+for _ in range(10):
     f = f2 + f1
     f1 = f2
     f2 = f

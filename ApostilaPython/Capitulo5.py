@@ -29,12 +29,12 @@ for i in range(0, len(lista)):
         somaNegativos = somaNegativos + lista[i]
 
 # Media do somatório dos elementos
-mediaElementos = + mediaElementos + lista[i]
-mediaElementos = mediaElementos / len(lista)
+elementos = sum(lista)
+mediaElementos = elementos / len(lista)
 print("Maior valor: " + str(maiorValor))
 print("Menor valor: " + str(menorValor))
 print("Lista de elementos pares: " + str(listaPares))
 print("Lista de elementos ímpares: " + str(listaImpares))
 print("Número de ocorrências do primeiro item: " + str(ocorrenciasItem1))
-print("Média dos elementos: " + str(mediaElementos))
+print(f"Média dos elementos: {mediaElementos:.2f}")
 print("Somatório dos valores negativos:" + str(somaNegativos))

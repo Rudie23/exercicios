@@ -10,5 +10,5 @@ for _ in range(5):
 
 lista.sort()
 
-print('Lista com números inteiros abaixo:')
+print('Lista com números inteiros ordenados de forma crescente abaixo:')
 print(lista)

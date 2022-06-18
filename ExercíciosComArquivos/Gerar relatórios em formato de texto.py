@@ -1,6 +1,7 @@
 """
 A ACME Inc., uma empresa de 500 funcionários, está tendo problemas de espaço em disco no seu servidor de arquivos.
-Para tentar resolver este problema, o Administrador de Rede precisa saber qual o espaço ocupado pelos usuários, e identificar os usuários com maior espaço ocupado.
+Para tentar resolver este problema, o Administrador de Rede precisa saber qual o espaço ocupado pelos usuários, e
+identificar os usuários com maior espaço ocupado.
 Através de um programa, baixado da Internet, ele conseguiu gerar o seguinte arquivo, chamado "usuarios.txt":
 
 alexandre       456123789
@@ -10,7 +11,8 @@ carlos          91257581
 cesar           987458
 rosemary        789456125
 
-Neste arquivo, o nome do usuário possui 15 caracteres. A partir deste arquivo, você deve criar um programa que gere um relatório, chamado "relatório.txt", no seguinte formato:
+Neste arquivo, o nome do usuário possui 15 caracteres. A partir deste arquivo, você deve criar um programa que gere um
+relatório, chamado "relatório.txt", no seguinte formato:
 ACME Inc.               Uso do espaço em disco pelos usuários
 ------------------------------------------------------------------------
 Nr.  Usuário        Espaço utilizado     % do uso
@@ -28,12 +30,14 @@ Espaço médio ocupado: 430,26 MB
 
 lista_de_dados = []
 
-def transformar_em_megabytes(tamanho_em_bytes:str) -> float:
-    return int(tamanho_em_bytes)/ (2**10) ** 2
 
-with open('/home/diego/Documentos/usuarios', 'r') as arquivo: # r para ler o arquivo
+def transformar_em_megabytes(tamanho_em_bytes: str) -> float:
+    return int(tamanho_em_bytes) / (2 ** 10) ** 2
+
+
+with open('/home/diego/Documentos/usuarios', 'r') as arquivo:  # r para ler o arquivo
     for linha in arquivo:
-        linha = linha.strip() # strip para retirar as linhas
+        linha = linha.strip()  # strip para retirar as linhas
         usuario = linha[:15]
         tamanho_em_disco = transformar_em_megabytes(linha[16:])
         lista_de_dados.append((usuario, tamanho_em_disco))
@@ -45,15 +49,16 @@ cabecalho = '''ACME Inc.               Uso do espaço em disco pelos usuários
 Nr.  Usuário        Espaço utilizado     % do uso
 '''
 
-with open('/home/diego/Documentos/relatorio', 'w') as arquivo: # arquivo é uma variável a qual a função open irá interagir
+with open('/home/diego/Documentos/relatorio',
+          'w') as arquivo:  # arquivo é uma variável a qual a função open irá interagir
     tamanho_total_consumido = sum([tamanho for _, tamanho in lista_de_dados])
     arquivo.writelines(cabecalho)
-    media = tamanho_total_consumido/ len(lista_de_dados)
-    for indice, dados in enumerate(lista_de_dados, start = 1): # start para começar a contar ap partir de 1
-        usuario, tamanho_em_disco = dados # despacotei
+    media = tamanho_total_consumido / len(lista_de_dados)
+    for indice, dados in enumerate(lista_de_dados, start=1):  # start para começar a contar ap partir de 1
+        usuario, tamanho_em_disco = dados  # despacotei
         arquivo.writelines(f''
-            f'{indice:<4} {usuario} {tamanho_em_disco:9.2f}'
-            f'{tamanho_em_disco/tamanho_total_consumido:>6.2%}\n')
+                           f'{indice:<4} {usuario} {tamanho_em_disco:9.2f}'
+                           f'{tamanho_em_disco / tamanho_total_consumido:>6.2%}\n')
 
     arquivo.writelines('\n\n')
     arquivo.writelines(f'Espaço total ocupado: {tamanho_total_consumido:.2f} MB \n')
