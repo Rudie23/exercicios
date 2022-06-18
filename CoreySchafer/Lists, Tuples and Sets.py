@@ -1,6 +1,5 @@
 from operator import itemgetter
 
-
 courses = ['History', 'Math', 'Physics', 'Chemistry']
 
 nums = [1, 5, 2, 4, 3]
@@ -18,11 +17,10 @@ print(sorted_courses)
 
 print(courses.index('Math'))
 
-
 for item in courses:
     print(item, type(item))
 
-for index, course in enumerate(courses, start= 1):
+for index, course in enumerate(courses, start=1):
     print(index, course)
 
 course_str = ' - '.join(courses)
