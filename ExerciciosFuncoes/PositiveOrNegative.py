@@ -10,4 +10,4 @@ def f(number):
 
 
 num = float(input('Qual é o número que desejas digitar? '))
-print(f(num))
+f(num)

@@ -20,3 +20,4 @@ for nota in notas:
 '''Ou pode ser lido'''
 
 print(' '.join([str(nota) for nota in notas if nota > media]))
+
