@@ -41,5 +41,5 @@ def arraySum(n: int):
     result = sum(numbers)
     print(result)
 
-arraySum(5)
 
+arraySum(5)

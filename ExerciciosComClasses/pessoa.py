@@ -20,7 +20,7 @@ class Pessoa:
 
 class Homem(Pessoa):
     def cumprimentar(self):
-        cumprimentar_da_classe = super().cumprimentar() # o comando super serve para herdar os elementos da classe pai
+        cumprimentar_da_classe = super().cumprimentar()  # o comando super serve para herdar os elementos da classe pai
         return f'{cumprimentar_da_classe}. Aperto de mão'
 
 

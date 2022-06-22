@@ -33,4 +33,3 @@ if __name__ == '__main__':
 def reverseArray(arr):
     # Write your code here
     arr_count = []
-

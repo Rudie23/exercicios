@@ -27,8 +27,6 @@ The first line contains an integer n, the size of the array words. Each of the n
 
 """
 
+
 def minimal_operations(words):
     words = []
-
-
-
