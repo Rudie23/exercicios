@@ -1,5 +1,7 @@
-''' Faça um programa que leia um vetor de 5 numeros inteiros '''
+""" Faça um programa que leia um vetor de 5 numeros inteiros """
+
 lista = [1, 2, "Diego", []]
+
 lista.append(10)
 print(f'Primeira lista é {lista}')
 

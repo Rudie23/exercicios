@@ -4,12 +4,16 @@ Faça um programa que leia 5 números e informe o maior número."""
 
 numeros = list(range(1, 11))
 
+print('Lista de 10 números')
 for v in numeros:
-    print(v)
+    print(v, end=' ')
 
+print('\n')
+print('Lista de 10 números com seus respectivos índices')
 for i, v in enumerate(numeros):
-    print(i, v)
+    print('indice=' + str(i) + ',', 'valor=' + str(v))
 
+print()
 print(' '.join([str(numero) for numero in numeros]))
 
 numeros = max(numeros)
