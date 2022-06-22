@@ -1,6 +1,6 @@
 file = open('palavras.txt', 'w')
 file.write('banana\n')
-file.write('uva\n\n')
+file.write('uva\n')
 
 file = open('palavras.txt', 'a')
 file.write('morango\n')

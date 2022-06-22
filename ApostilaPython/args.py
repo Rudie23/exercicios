@@ -15,3 +15,4 @@ print()
 
 tupla = ('é', 'muito', 'legal')
 teste('python', *tupla)
+enu

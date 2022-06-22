@@ -4,7 +4,7 @@ do mesmo. Observando os termos no plural a colocação do "e", da vírgula entre
 20, 10, 21, 11, 1, 7 e 16 """
 
 
-numero = 326
+numero = 54
 centenas_str = dezenas_str = unidades_str = ''
 
 centenas_int, numero = divmod(numero, 100)
@@ -26,4 +26,4 @@ if numero == 1:
 elif numero > 1:
     unidades_str = f'{numero} unidades'
 
-print(centenas_str, dezenas_str, unidades_str)
+print(centenas_str, dezenas_str, 'e', unidades_str)

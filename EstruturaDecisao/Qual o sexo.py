@@ -6,6 +6,6 @@ if sexo == 'M':
 elif sexo == "F":
     print("Feminino")
 else:
-    print("Sexo indefenido")
+    print("Sexo indefinido")
 
 print('Acabou o programa')
