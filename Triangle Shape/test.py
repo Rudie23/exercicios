@@ -12,7 +12,7 @@ para um n informado pelo usuário. Use uma função que receba um valor n inteir
 def triangle(n: int):
     for i in range(n):
         i = i + 1
-        for j in range(i):
+        for _ in range(i):
             print(i, end=' ')
         print()
 
