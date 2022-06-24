@@ -4,7 +4,7 @@ while True:
     entrada = float(input('Digite um número: '))
     if entrada == -1:
         break
-    notas.append(float(entrada))
+    notas.append(entrada)
 
 tamanho = len(notas)
 print(f'Foram lidas {tamanho} notas')

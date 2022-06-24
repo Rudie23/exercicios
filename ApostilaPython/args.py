@@ -9,9 +9,9 @@ teste('python', 'é', 'muito', 'legal')
 print()
 
 lista = ['é', 'muito', 'legal']
-teste('python', *lista)
+teste('Python', *lista)
 
 print()
 
 tupla = ('é', 'muito', 'legal')
-teste('python', *tupla)
+teste('Python', *tupla)

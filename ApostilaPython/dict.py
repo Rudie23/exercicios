@@ -17,6 +17,10 @@ print(person.keys())
 print(person.values())
 print()
 
+# To access the items
+print(person.items())
+print()
+
 # Only you can create keys using immutable data
 dic = {(1, 2, 3): 'value'}
 print(dic)

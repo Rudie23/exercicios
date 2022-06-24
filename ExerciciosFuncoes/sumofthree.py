@@ -8,4 +8,4 @@ def f(x, y, z):
 x = float(input('Digite um número: '))
 y = float(input('Digite um número: '))
 z = float(input('Digite um número: '))
-print(f(x, y, z))
+print('A soma das notas é:', str(f(x, y, z)))

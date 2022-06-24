@@ -1,4 +1,4 @@
-import  urllib.request
+import urllib.request
 
 
 def ConectInternet():
@@ -7,5 +7,6 @@ def ConectInternet():
     if objurl.getcode() == 200:
         data = objurl.read()
         print(data)
+
 
 ConectInternet()

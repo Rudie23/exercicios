@@ -5,7 +5,7 @@ print('Descubra a palavra')
 
 print('A palavra é: ', end='')
 for letra in palavra:
-    print('_ ', end='')
+    print('_ ', end='')zz
 
 conjunto_letras_palavras = set(palavra)
 conjunto_letras_digitadas = set()

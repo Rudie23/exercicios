@@ -11,7 +11,7 @@ print('Triangulo com 2')
 triangulo(2)
 print('Triangulo com 3')
 triangulo(3)
-print('\n')
+print()
 
 
 def triangulo(n: 1):

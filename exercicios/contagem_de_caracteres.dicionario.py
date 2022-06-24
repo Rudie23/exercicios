@@ -24,7 +24,8 @@ def contar_caracteres(s):
             contagem = 1
 
     resultado[caracter_anterior] = contagem
-    return resultado
+    for key in resultado:
+        print(f'{key}: {resultado[key]}')
 
 
 if __name__ == '__main__':
