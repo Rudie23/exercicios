@@ -45,7 +45,7 @@ class BombaCombustivel:
             print('Malandro, você não vai roubar combustível dessa bomba.')
 
 
-bomba = BombaCombustivel('Gasolina', 7.0, 55.0)
+bomba = BombaCombustivel('Gasolina', 7.5, 55.0)
 
 bomba.abastecer_por_valor(100)
 

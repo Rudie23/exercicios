@@ -15,7 +15,7 @@ class Pessoa:
 
     def envelhecer(self):
         if self.idade < 21:
-            self.altura += 0.5
+            self.altura += 5
         self.idade += 1
 
 

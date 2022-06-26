@@ -11,11 +11,12 @@ class CirculoPerfeitos:
         self.circunferencia = 4
         self.material = "Papel"
 
-    def mostra_cor(self): #self se refere ao objeto que está executando o metodo
+    def mostra_cor(self):  # self se refere ao objeto que está executando o método
         return self.cor
 
     def trocar_cor(self, cor):
         self.cor = cor
+
 
 circulo_primeiro = CirculoPerfeitos()
 circulo_segundo = CirculoPerfeitos()

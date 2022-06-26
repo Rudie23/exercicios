@@ -17,7 +17,7 @@ def triangle(n: int):
         print()
 
 
-print('Triangulo')
+print('Triangulo 1')
 triangle(5)
 
 
@@ -25,8 +25,7 @@ def triangle_2(n: int):
     for i in range(n):
         i = i + 1
         for j in range(i):
-            j = j + 1
-            print(j, end=' ')
+            print(j + 1, end=' ')
         print()
 
 

@@ -1,4 +1,5 @@
 notas = []
+print('Digite as notas do aluno')
 while True:
     print('Para encerrar o programa, digite -1')
     entrada = float(input('Digite um número: '))

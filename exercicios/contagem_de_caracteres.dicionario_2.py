@@ -13,12 +13,14 @@ def contar_caracteres(s):
     resultado = {}
 
     for caracter in s:
+        if caracter == ' ':
+            continue
         resultado[caracter] = resultado.get(caracter, 0) + 1
 
     return resultado
 
 
 if __name__ == '__main__':
-    print(contar_caracteres('Diego'.lower()))
+    print(contar_caracteres('Ruan Diego'.lower()))
     print()
     print(contar_caracteres('Andrade'.lower()))
