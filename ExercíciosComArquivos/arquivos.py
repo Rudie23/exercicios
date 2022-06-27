@@ -30,12 +30,12 @@ O arquivo de saída possui o seguinte formato:
 
 
 def validar(ip: str) -> bool:
-    numeros = ip.split('.')
+    numeros = ip.split('.')  # retorna uma lista
 
     if len(numeros) != 4:
         return False
 
-    for n in numeros:
+    for n in numeros:  # o ip deve estar entre 0 e 255
         if not (0 <= int(n) <= 255):
             return False
     return True
@@ -43,14 +43,17 @@ def validar(ip: str) -> bool:
 
 ips_validos = []
 ips_invalidos = []
-with open('\\Users\\ruand\\OneDrive\\Documentos\\ips.txt', 'r') as arquivo:  # r para ler o arquivo
+
+with open("C:\\Users\\ruand\PycharmProjects\Meus_exercicios\ExercíciosComArquivos\ips.txt", 'r') as arquivo:
     for linha in arquivo:
-        ip = linha.strip()  # strip para retirar as linhas
+        ip = linha.strip()
         if validar(ip):
             ips_validos.append(ip)
         else:
             ips_invalidos.append(ip)
-with open('/home/diego/Documentos/saída', 'w') as arquivo:  # arquivo é uma variável a qual a função open irá interagir
+        print(ip, validar(ip))
+
+with open("C:\\Users\\ruand\PycharmProjects\Meus_exercicios\ExercíciosComArquivos\ips_saida.txt", 'w') as arquivo:
     arquivo.writelines('Endereços válidos:\n')
 
     for ip in ips_validos:

@@ -26,6 +26,11 @@ Nr.  Usuário        Espaço utilizado     % do uso
 
 Espaço total ocupado: 2581,57 MB
 Espaço médio ocupado: 430,26 MB
+
+O arquivo de entrada deve ser lido uma única vez, e os dados armazenados em memória, caso sejam necessários, de forma a
+agilizar a execução do programa. A conversão da espaço ocupado em disco, de bytes para megabytes deverá ser feita
+através de uma função separada, que será chamada pelo programa principal. O cálculo do percentual de uso também deverá
+ser feito através de uma função, que será chamada pelo programa principal.
 """
 
 lista_de_dados = []
@@ -35,7 +40,7 @@ def transformar_em_megabytes(tamanho_em_bytes: str) -> float:
     return int(tamanho_em_bytes) / (2 ** 10) ** 2
 
 
-with open('/home/diego/Documentos/usuarios', 'r') as arquivo:  # r para ler o arquivo
+with open('C:\\Users\\ruand\PycharmProjects\\Meus_exercicios\\ExercíciosComArquivos\\usuarios.txt', 'r') as arquivo:
     for linha in arquivo:
         linha = linha.strip()  # strip para retirar as linhas
         usuario = linha[:15]
@@ -49,7 +54,7 @@ cabecalho = '''ACME Inc.               Uso do espaço em disco pelos usuários
 Nr.  Usuário        Espaço utilizado     % do uso
 '''
 
-with open('/home/diego/Documentos/relatorio',
+with open('C:\\Users\\ruand\PycharmProjects\\Meus_exercicios\\ExercíciosComArquivos\\relatorios.txt',
           'w') as arquivo:  # arquivo é uma variável a qual a função open irá interagir
     tamanho_total_consumido = sum([tamanho for _, tamanho in lista_de_dados])
     arquivo.writelines(cabecalho)

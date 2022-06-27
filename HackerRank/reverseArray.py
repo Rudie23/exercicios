@@ -32,4 +32,10 @@ if __name__ == '__main__':
 
 def reverseArray(arr):
     # Write your code here
-    arr_count = []
+    arr.sort(reverse=True)
+
+    print(arr)
+
+
+arr = [15, 5, 7, 45, 17]
+reverseArray(arr)

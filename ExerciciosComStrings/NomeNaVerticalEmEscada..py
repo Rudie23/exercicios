@@ -14,6 +14,4 @@ s = 'FULANO'
 tamanho = len(s)
 
 for linha in range(tamanho):
-    for coluna in range(linha + 1):
-        print(s[coluna], end='')
-    print()
+    print(s[:linha + 1])
