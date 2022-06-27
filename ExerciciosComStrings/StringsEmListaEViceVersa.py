@@ -1,7 +1,6 @@
 nome = 'Ruan Diego Andrade dos Anjos'.upper()
 
 nome_invertido_por_letras = ''.join(reversed(nome))
-
 # print(nome.split())  separa pelos espaços
 
 nome_invertido_por_palavras = ' '.join(reversed(nome.split()))
