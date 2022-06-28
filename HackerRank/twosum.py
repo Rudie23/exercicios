@@ -9,11 +9,12 @@ def twosum(arr, sumarray):
         elif arr[left] + arr[right] < sumarray:
             left += 1
         elif arr[left] + arr[right] == sumarray:
-            print("Values of pair are", arr[left], "&", arr[right],)
+            print("Values of pair are", arr[left], "&", arr[right], )
             right -= 1
             left += 1
 
-arr = [5,7,4,3,9,8,19,21]
+
+arr = [5, 7, 4, 3, 9, 8, 19, 21]
 sumarray = 17
 twosum(arr, sumarray)
 
