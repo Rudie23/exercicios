@@ -28,14 +28,15 @@ if __name__ == '__main__':
     fptr.close()
 
 """
+from typing import List
 
 
-def reverseArray(arr):
+def reverseArray(arr: List):
     # Write your code here
-    arr.sort(reverse=True)
 
-    print(arr)
+    lenght = len(arr) - 1
+    return print(arr[lenght::-1])
 
 
-arr = [15, 5, 7, 45, 17]
+arr = [5, 4, 3, 2, 1, 6]
 reverseArray(arr)

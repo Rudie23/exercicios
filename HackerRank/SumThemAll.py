@@ -30,16 +30,16 @@ if __name__ == '__main__':
 """
 
 
-def arraySum(n: int):
+def arraySum(numbers):
     # Write your code here
-    numbers = []
+    sumarray = 0
+    for element in numbers:
+        sumarray += element
+    result = sumarray
 
-    for _ in range(n):
-        numbers_item = int(input('Enter the number to add to the list: '))
-        numbers.append(numbers_item)
-
-    result = sum(numbers)
-    print(result)
+    return result
 
 
-arraySum(5)
+# Lembre-se que é uma soma dos elementos de uma lista.
+numbers = [5, 7, 9, 12, 15]
+print(arraySum(numbers))
