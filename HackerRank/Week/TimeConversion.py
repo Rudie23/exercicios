@@ -18,7 +18,7 @@ hora = s[:2]
 print(hora)
 
 
-def timeConversion(s: str):
+def timeConversion(s: str) -> str:
     am_pm = s[-2:]
     if am_pm == 'PM' and s[:2] != '12':
         s = str(12 + int(s[:2])) + s[2:]
