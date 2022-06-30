@@ -29,3 +29,7 @@ def timeConversion(s: str):
 
 s = '12:01:00AM'
 print(timeConversion(s))
+s_2 = '05:45:32AM'
+print(timeConversion(s_2))
+s_3 = '05:45:32PM'
+print(timeConversion(s_3))

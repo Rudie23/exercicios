@@ -1,4 +1,4 @@
-#!/bin/python3
+
 #
 # Complete the 'plusMinus' function below.
 #
@@ -10,8 +10,8 @@ def plusMinus(arr):
     pos = 0
     neg = 0
     zero = 0
-    lenght = len(arr)
-    for i in range(lenght):
+    n = len(arr)
+    for i in range(n):
         if arr[i] > 0:
             pos = pos + 1
         elif arr[i] < 0:
@@ -34,4 +34,7 @@ def plusMinus(arr):
 # #   plusMinus(arr)
 
 arr1 = [1, 2, 0, -1, 0]
+arr2 = [1, 5, 6, 7, 0, -1, -3, -7]
 plusMinus(arr1)
+print()
+plusMinus(arr2)
