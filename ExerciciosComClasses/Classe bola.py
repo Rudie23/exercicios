@@ -11,6 +11,10 @@ class CirculoPerfeitos:
         self.circunferencia = 4
         self.material = "Papel"
 
+    def tipo(self):
+        print(id(self.cor))
+        print(id(self.circunferencia))
+
     def mostra_cor(self):  # self se refere ao objeto que está executando o método
         return self.cor
 
@@ -21,6 +25,7 @@ class CirculoPerfeitos:
 circulo_primeiro = CirculoPerfeitos()
 circulo_segundo = CirculoPerfeitos()
 circulo_segundo.trocar_cor('Amarelo')
+print(circulo_primeiro.tipo())
 print(type(circulo_segundo))
 print(id(circulo_primeiro), circulo_primeiro.mostra_cor())
 print(id(circulo_segundo), circulo_segundo.mostra_cor())
