@@ -12,7 +12,7 @@ def lonelyinteger(a):
             print('Alone number ' + str(i))
 
 
-arr = [2, 4, 4, 1, 1]
+arr = [2, 4, 4, 1, 1, -1]
 lonelyinteger(arr)
 
 

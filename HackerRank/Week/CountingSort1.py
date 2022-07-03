@@ -1,5 +1,6 @@
 def countingSort(arr):
-    count = [0] * 100
+    n = len(arr)
+    count = [0] * n
 
     for num in arr:
         count[num] += 1

@@ -1,4 +1,4 @@
 name = 'diego'
 
-for i, v in enumerate(name):
-    print(i+1, v, sep=':', end=' ')
+for i, v in enumerate(name, start=1):
+    print(i, v, sep=':', end=' ')

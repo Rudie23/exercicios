@@ -26,29 +26,29 @@ while i < len(lista):
     i = i + 1
     j = j + 1
 
-i, j = 0, len(lista) - 1
-
 print()
 print('Diagonal reversa')
+
 while i < len(lista):
     print(lista[i][j])
     i = i + 1
     j = j - 1
 
+print()
+print("The difference between the diagonals")
+
 
 def diagonalDifference(arr):
     leftSum, rightSum = 0, 0
 
-    i = 0
-    j = 0
+    i, j = 0, 0
 
     while i < len(arr):
         leftSum += arr[i][j]
         i += 1
         j += 1
 
-    i = 0
-    j = len(arr) - 1
+    i, j = 0, len(arr) - 1
 
     while i < len(arr):
         rightSum += arr[i][j]
@@ -56,10 +56,13 @@ def diagonalDifference(arr):
         j -= 1
 
     print(leftSum, rightSum)
+    print()
+    print("The absolute value between diagonal difference")
     return abs(leftSum - rightSum)
 
 
 print(diagonalDifference(lista))
+print()
 
 
 def diagonal(arr):

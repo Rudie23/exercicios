@@ -11,13 +11,14 @@ uma seqüência de caracteres, mostre−a e diga se é um palíndromo ou não.
 
 def palindrome(s: str):
     x = ''.join(s.lower().split())
+    print(x)
     if x == x[::-1]:
         print('É um palíndromo')
     else:
         print('Não é um palíndromo')
 
 
-word = "Ovo"
+word = "SUBI NO ONIBUS"
 
 print(word)
 palindrome(word)

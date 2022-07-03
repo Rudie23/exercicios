@@ -34,8 +34,8 @@ from typing import List
 def reverseArray(arr: List):
     # Write your code here
 
-    lenght = len(arr) - 1
-    return print(arr[lenght::-1])
+    length = len(arr) - 1
+    return print(arr[::-1])
 
 
 arr = [5, 4, 3, 2, 1, 6]

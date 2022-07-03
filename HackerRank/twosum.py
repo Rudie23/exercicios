@@ -15,16 +15,5 @@ def twosum(arr, sumarray):
 
 
 arr = [5, 7, 4, 3, 9, 8, 19, 21]
-sumarray = 17
+sumarray = 28
 twosum(arr, sumarray)
-
-n = int(input('Digite um numero inteiro: '))
-
-if n % 2 != 0:
-    print('Weird')
-elif n % 2 == 0 and n in range(2, 5):
-    print('Not Weird')
-elif n % 2 == 0 and n in range(6, 20):
-    print('Weird')
-elif n % 2 == 0 and n >= 20:
-    print('Not Weird')

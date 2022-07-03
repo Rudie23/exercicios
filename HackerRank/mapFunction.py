@@ -3,7 +3,7 @@ def myfunc1(n):
 
 
 x = map(myfunc1, ('apple', 'banana', 'cherry'))
-
+# To show the length of each item in a tuple
 print(list(x))
 
 
@@ -12,7 +12,7 @@ def function(a, b):
 
 
 y = map(function, ('apple', 'banana', 'cherry'), ('orange', 'lemon', 'pineapple'))
-
+# To show the sum of each item
 print(list(y))
 
 
@@ -51,21 +51,6 @@ test = list(map(list, l))
 print(test)
 
 
-def rotate_chr(c):
-    rot_by = 3
-    c = c.lower()
-    alphabet = "abcdefghijklmnopqrstuvwxyz"
-    # Keep punctuation and whitespace
-    if c not in alphabet:
-        return c
-    rotated_pos = ord(c) + rot_by
-    # If the rotation is inside the alphabet
-    if rotated_pos <= ord(alphabet[-1]):
-        return chr(rotated_pos)
-    # If the rotation goes beyond the alphabet
-    return chr(rotated_pos - len(alphabet))
-
-
 def powers(x):
     return x ** 2, x ** 3
 
@@ -80,4 +65,4 @@ import math
 numbers = [1, 2, 3, 4, 5, 6, 7]
 
 show_factorial = list(map(math.factorial, numbers))
-print(show)
+print(show_factorial)

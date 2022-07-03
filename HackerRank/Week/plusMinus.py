@@ -35,6 +35,9 @@ def plusMinus(arr):
 
 arr1 = [1, 2, 0, -1, 0]
 arr2 = [1, 5, 6, 7, 0, -1, -3, -7]
+print()
+print("A array of the integer numbers")
 plusMinus(arr1)
 print()
+print("The ratio of the numbers")
 plusMinus(arr2)
