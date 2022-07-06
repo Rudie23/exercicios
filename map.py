@@ -1,5 +1,4 @@
 
-
 with_spaces = ['processing ', ' strings', 'with ', ' map']
 
 lista = list(map(str.strip, with_spaces))
