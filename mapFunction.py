@@ -1,3 +1,6 @@
+import math
+
+
 def myfunc1(n):
     return len(n)
 
@@ -44,10 +47,10 @@ result = map(lambda x, y: x + y, numbers1, numbers2)
 print(list(result))
 
 # List of strings
-l = ['sat', 'bat', 'cat', 'mat']
+list2 = ['sat', 'bat', 'cat', 'mat']
 
 # map() can listify the list of strings individually
-test = list(map(list, l))
+test = list(map(list, list2))
 print(test)
 
 
@@ -60,9 +63,11 @@ numbers = [1, 2, 3, 4]
 show = list(map(powers, numbers))
 print(show)
 
-import math
-
 numbers = [1, 2, 3, 4, 5, 6, 7]
 
 show_factorial = list(map(math.factorial, numbers))
+for facto in show_factorial:
+    print(facto, end=' ')
+print()
+print(type(show_factorial))
 print(show_factorial)

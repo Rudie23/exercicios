@@ -10,7 +10,7 @@ def solve(scores):
 
 
 scores = [5, 8, 2, 6, 8, 5, 8, 7]
-print(solve(scores))
+print("Runner-up score is:", solve(scores))
 
 # Create a Score List
 score_lis = [1, 2, 3, 4, 5, 6, 6, 6, 7, 8, 9, 9, 9, 10, 10, 10, 10]
