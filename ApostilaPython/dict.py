@@ -11,13 +11,17 @@ print(person)
 print()
 
 # To access the keys
+print('To access the keys')
 print(person.keys())
+print()
 
 # To access the values
+print('To access the values')
 print(person.values())
 print()
 
 # To access the items
+print('To access the items')
 print(person.items())
 print()
 
