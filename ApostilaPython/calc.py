@@ -12,4 +12,3 @@ for key in result:  # key
     print(type(result[key]))
     print()
     print(f'{key}: {result[key]}')
-
