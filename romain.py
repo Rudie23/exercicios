@@ -7,7 +7,7 @@ def roman_to_integer(s: str) -> int:
         "L": 50,
         "C": 100,
         "D": 500,
-        "M": 100,
+        "M": 1000,
     }
     number = 0
 
@@ -19,5 +19,5 @@ def roman_to_integer(s: str) -> int:
 
     return number
 
-s1 = 'VIII'
+s1 = 'CMXLV'
 print(roman_to_integer(s1))
