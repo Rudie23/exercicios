@@ -4,3 +4,5 @@ print(type(seq[0]))
 print(int(seq[0]))
 print(type(int(seq[0])))
 print(int(seq[0], 2))
+
+s = ' '.join(seq)
