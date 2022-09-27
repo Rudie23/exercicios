@@ -18,7 +18,7 @@ def palindrome(s: str):
         print('Não é um palíndromo')
 
 
-word = "SUBI NO ONIBUS"
+word = "Subi no Onibus"
 
 print(word)
 palindrome(word)
