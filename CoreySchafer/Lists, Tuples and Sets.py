@@ -1,4 +1,4 @@
-from operator import itemgetter
+
 
 courses = ['History', 'Math', 'Physics', 'Chemistry']
 

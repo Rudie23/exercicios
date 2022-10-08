@@ -5,4 +5,4 @@ student = {'name': 'John', 'age': 25, 'courses': ['Math', 'Chemistry']}
 print(student)
 
 for key, value in student.items():
-    print(key, ':', value)
+    print(f'{key} : {value}')
