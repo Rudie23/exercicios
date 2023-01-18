@@ -1,7 +1,5 @@
 saque = int(input('Quanto queres sacar? '))
 
-notas_100 = notas_50 = notas_10 = notas_5 = notas_1 = 0
-
 notas_100, saque = divmod(saque, 100)
 notas_50, saque = divmod(saque, 50)
 notas_10, saque = divmod(saque, 10)

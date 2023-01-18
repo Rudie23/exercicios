@@ -1,4 +1,4 @@
-month_days = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+month_days = (0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)
 
 
 def is_leap(year):
@@ -20,4 +20,4 @@ def days_in_month(year, month):
 
 print(is_leap(104))
 
-print(days_in_month(2020, 14))
+print(days_in_month(2022, 12))

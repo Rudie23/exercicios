@@ -1,6 +1,9 @@
+from math import inf
+
+
 def solve(scores):
-    winner = -99999
-    runner_up = -99999
+    winner = -inf
+    runner_up = -inf
     for i in scores:
         if i > winner:
             winner, runner_up = i, winner
