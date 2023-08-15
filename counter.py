@@ -28,4 +28,4 @@ colecao = [
 ]
 
 quantidades = Counter(colecao)
-print(quantidades)
+print(dict(quantidades))
