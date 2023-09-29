@@ -21,3 +21,4 @@ def readBigFile():
 
 
 readBigFile()
+readFile()

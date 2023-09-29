@@ -23,9 +23,9 @@ class BombaCombustivel:
 
     def abastecer_por_valor(self, valor: float):
         litros_abastecidos = valor / self.valor_litro
-        self._apresentar_abastecimento_se_possivel(litros_abastecidos, valor)
+        self.__apresentar_abastecimento_se_possivel(litros_abastecidos, valor)
 
-    def _apresentar_abastecimento_se_possivel(self, litros_abastecidos: float, valor: float):
+    def __apresentar_abastecimento_se_possivel(self, litros_abastecidos: float, valor: float):
         if litros_abastecidos > self.quantidade_combustivel:
             print(f'Não é possível abastecer, faltam  {litros_abastecidos - self.quantidade_combustivel} litros')
             print(f'Sobraram na bomba {self.quantidade_combustivel:.2f} litros de {self.tipo_combustivel}.')
@@ -36,7 +36,7 @@ class BombaCombustivel:
 
     def abastecer_por_litros(self, litros_abastecidos: float):
         valor = litros_abastecidos * self.valor_litro
-        self._apresentar_abastecimento_se_possivel(litros_abastecidos, valor)
+        self.__apresentar_abastecimento_se_possivel(litros_abastecidos, valor)
 
     def adicionar_mais_combustivel(self, quantidade: float):
         if quantidade >= 0:
@@ -45,10 +45,10 @@ class BombaCombustivel:
             print('Malandro, você não vai roubar combustível dessa bomba.')
 
 
-bomba = BombaCombustivel('Gasolina', 7.5, 55.0)
+bomba = BombaCombustivel('Gasolina', 6.5, 55.0)
 
 bomba.abastecer_por_valor(100)
-
+print()
 bomba.abastecer_por_litros(150)
-
+print()
 bomba.adicionar_mais_combustivel(-50)
